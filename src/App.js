@@ -1,34 +1,18 @@
+import myroladex from './images/myroladex.png'
 import Card from './components/Card.js';
+import Header from "./components/Header";
+
+
 import {useState, useEffect} from 'react'
 
 
-function App({}) {
+function App() {
 
-  // const url = ()
-
-  // const randomUser = async () =>{
-
-  //   const response = await fetch(url)
-  //   const data = await response.json()
-  // }
-  const [contactList, setContactList] = useState({
-    first_ame: "",
-    last_name:"",
-    phone:"",
-    email:""
-  })
-  // const [filterQuery, setFilterQuery] = useState('')
-
-  // useEffect(() =>{
-  //   if(filterQuery){
-  //     //use filter query
-
-  //   }else{
-  //     setContactList(randomUser)
-  //   }
-  // },[])
 
   return (
+    <div>
+    <Header/>
+
     <div className="bg-green-200">
       <section>
 
@@ -44,6 +28,7 @@ function App({}) {
          <Card/>
       </section>
 
+    </div>
     </div>
   );
 }
